@@ -15,7 +15,7 @@ BookFair is a full-stack, microservices-based system for managing book fairs, st
 
 ## Prerequisites
 - Java 21 (all backend services use it)
-- Node.js + npm (frontend)
+- TypeScript + npm (frontend)
 - PostgreSQL (local databases)
 - RabbitMQ (local message broker)
 
