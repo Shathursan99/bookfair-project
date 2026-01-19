@@ -1,0 +1,21 @@
+package com.bookfair.user_service.dto.request;
+
+import com.bookfair.user_service.enums.UserProfession;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+public class EmailRequest {
+
+  private String email;
+  private UserProfession userProfession;
+  private String subject;
+  private String body;
+  private boolean isHtml;
+
+}

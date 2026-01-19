@@ -1,0 +1,83 @@
+###############################################
+# 🌍 General
+###############################################
+.DS_Store
+Thumbs.db
+
+# Environment files (real secrets)
+.env
+**/.env
+frontend/.env.local
+
+# Allow example env files
+!.env.example
+!**/.env.example
+!frontend/.env.example
+
+
+###############################################
+# ⚙️ Backend (Spring Boot / Maven / Java)
+###############################################
+backend/target/
+backend/.mvn/wrapper/maven-wrapper.jar
+backend/HELP.md
+
+# Keep nested target/build folders if explicitly included in code
+!backend/**/src/main/**/target/
+!backend/**/src/test/**/target/
+!backend/**/src/main/**/build/
+!backend/**/src/test/**/build/
+
+
+###############################################
+# 💻 Frontend (React / Node.js)
+###############################################
+frontend/node_modules/
+frontend/build/
+frontend/dist/
+
+
+###############################################
+# 🧰 IDE & Editor Settings
+###############################################
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# VS Code
+.vscode/
+
+# Eclipse / STS
+backend/.classpath
+backend/.project
+backend/.settings/
+backend/.springBeans
+backend/.factorypath
+backend/.apt_generated
+backend/.sts4-cache
+
+# NetBeans
+backend/nbproject/private/
+backend/nbbuild/
+backend/dist/
+backend/nbdist/
+backend/.nb-gradle/
+backend/build/
+
+
+###############################################
+# 🪣 Logs, Temp Files & Cache
+###############################################
+*.log
+logs/
+tmp/
+temp/
+*.tmp
+
+# OS-specific
+ehthumbs.db
+Icon?
+desktop.ini
